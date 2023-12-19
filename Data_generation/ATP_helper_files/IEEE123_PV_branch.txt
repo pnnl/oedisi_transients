@@ -1,0 +1,261 @@
+new Line.sw5 phases=3 bus1=97.1.2.3 bus2=197.1.2.3 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw5 1
+new Line.sw4 phases=3 bus1=60.1.2.3 bus2=160.1.2.3 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw4 1
+new Line.sw7 phases=3 bus1=151.1.2.3 bus2=300_open.1.2.3 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw7 1
+new Line.sw6 phases=3 bus1=61.1.2.3 bus2=61s.1.2.3 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw6 1
+new Line.sw8 phases=1 bus1=54.1 bus2=94_open.1 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw8 1
+new Line.sw1 phases=3 bus1=150r.1.2.3 bus2=149.1.2.3 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw1 1
+new Line.sw3 phases=3 bus1=18.1.2.3 bus2=135.1.2.3 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw3 1
+new Line.sw2 phases=3 bus1=13.1.2.3 bus2=152.1.2.3 switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0 // CIM LoadBreakSwitch
+~ normamps=400.00 emergamps=600.00
+  close Line.sw2 1
+
+new Line.l50 phases=3 bus1=50.1.2.3 bus2=51.1.2.3 length=250.000 linecode=4 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l52 phases=3 bus1=52.1.2.3 bus2=53.1.2.3 length=200.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l51 phases=3 bus1=51.1.2.3 bus2=151.1.2.3 length=500.000 linecode=4 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l54 phases=3 bus1=54.1.2.3 bus2=55.1.2.3 length=275.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l53 phases=3 bus1=53.1.2.3 bus2=54.1.2.3 length=125.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l56 phases=3 bus1=55.1.2.3 bus2=56.1.2.3 length=275.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l55 phases=3 bus1=54.1.2.3 bus2=57.1.2.3 length=350.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l58 phases=3 bus1=57.1.2.3 bus2=60.1.2.3 length=750.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l57 phases=1 bus1=57.2 bus2=58.2 length=250.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l59 phases=1 bus1=58.2 bus2=59.2 length=250.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l111 phases=1 bus1=110.1 bus2=112.1 length=125.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l110 phases=1 bus1=110.1 bus2=111.1 length=575.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l113 phases=1 bus1=113.1 bus2=114.1 length=325.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l112 phases=1 bus1=112.1 bus2=113.1 length=525.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l115 phases=3 bus1=149.1.2.3 bus2=1.1.2.3 length=400.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l114 phases=3 bus1=135.1.2.3 bus2=35.1.2.3 length=375.000 linecode=4 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l117 phases=3 bus1=160r.1.2.3 bus2=67.1.2.3 length=350.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l116 phases=3 bus1=152.1.2.3 bus2=52.1.2.3 length=400.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l118 phases=3 bus1=197.1.2.3 bus2=101.1.2.3 length=250.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l61 phases=3 bus1=60.1.2.3 bus2=62.1.2.3 length=250.000 linecode=12 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l60 phases=3 bus1=60.1.2.3 bus2=61.1.2.3 length=550.000 linecode=5 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l63 phases=3 bus1=63.1.2.3 bus2=64.1.2.3 length=350.000 linecode=12 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l62 phases=3 bus1=62.1.2.3 bus2=63.1.2.3 length=175.000 linecode=12 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l65 phases=3 bus1=65.1.2.3 bus2=66.1.2.3 length=325.000 linecode=12 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l64 phases=3 bus1=64.1.2.3 bus2=65.1.2.3 length=425.000 linecode=12 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l67 phases=3 bus1=67.1.2.3 bus2=72.1.2.3 length=275.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l66 phases=1 bus1=67.1 bus2=68.1 length=200.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l69 phases=1 bus1=68.1 bus2=69.1 length=275.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l68 phases=3 bus1=67.1.2.3 bus2=97.1.2.3 length=250.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l100 phases=1 bus1=101.3 bus2=102.3 length=225.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l102 phases=1 bus1=102.3 bus2=103.3 length=325.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l101 phases=3 bus1=101.1.2.3 bus2=105.1.2.3 length=275.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l104 phases=1 bus1=105.2 bus2=106.2 length=225.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l103 phases=1 bus1=103.3 bus2=104.3 length=700.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l106 phases=1 bus1=106.2 bus2=107.2 length=575.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l105 phases=3 bus1=105.1.2.3 bus2=108.1.2.3 length=325.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l108 phases=3 bus1=108.1.2.3 bus2=300.1.2.3 length=1000.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l107 phases=1 bus1=108.1 bus2=109.1 length=450.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l109 phases=1 bus1=109.1 bus2=110.1 length=300.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l70 phases=1 bus1=69.1 bus2=70.1 length=325.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l1 phases=1 bus1=1.2 bus2=2.2 length=175.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l2 phases=1 bus1=1.3 bus2=3.3 length=250.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l72 phases=1 bus1=72.3 bus2=73.3 length=275.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l3 phases=3 bus1=1.1.2.3 bus2=7.1.2.3 length=300.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l71 phases=1 bus1=70.1 bus2=71.1 length=275.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l4 phases=1 bus1=3.3 bus2=4.3 length=200.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l74 phases=1 bus1=73.3 bus2=74.3 length=350.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l5 phases=1 bus1=3.3 bus2=5.3 length=325.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l73 phases=3 bus1=72.1.2.3 bus2=76.1.2.3 length=200.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l6 phases=1 bus1=5.3 bus2=6.3 length=250.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l76 phases=3 bus1=76.1.2.3 bus2=77.1.2.3 length=400.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l7 phases=3 bus1=7.1.2.3 bus2=8.1.2.3 length=200.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l75 phases=1 bus1=74.3 bus2=75.3 length=400.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l78 phases=3 bus1=77.1.2.3 bus2=78.1.2.3 length=100.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l8 phases=1 bus1=8.2 bus2=12.2 length=225.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l77 phases=3 bus1=76.1.2.3 bus2=86.1.2.3 length=700.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l9 phases=1 bus1=8.1 bus2=9.1 length=225.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l79 phases=3 bus1=78.1.2.3 bus2=79.1.2.3 length=225.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l81 phases=3 bus1=80.1.2.3 bus2=81.1.2.3 length=175.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l80 phases=3 bus1=78.1.2.3 bus2=80.1.2.3 length=475.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l83 phases=1 bus1=81.3 bus2=84.3 length=675.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l82 phases=3 bus1=81.1.2.3 bus2=82.1.2.3 length=250.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l85 phases=1 bus1=84.3 bus2=85.3 length=475.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l84 phases=3 bus1=82.1.2.3 bus2=83.1.2.3 length=250.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l87 phases=1 bus1=87.1 bus2=88.1 length=175.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l86 phases=3 bus1=86.1.2.3 bus2=87.1.2.3 length=450.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l89 phases=1 bus1=89.2 bus2=90.2 length=250.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l88 phases=3 bus1=87.1.2.3 bus2=89.1.2.3 length=275.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l90 phases=3 bus1=89.1.2.3 bus2=91.1.2.3 length=225.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l92 phases=3 bus1=91.1.2.3 bus2=93.1.2.3 length=225.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l91 phases=1 bus1=91.3 bus2=92.3 length=300.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l94 phases=3 bus1=93.1.2.3 bus2=95.1.2.3 length=300.000 linecode=6 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l93 phases=1 bus1=93.1 bus2=94.1 length=275.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l96 phases=3 bus1=97.1.2.3 bus2=98.1.2.3 length=275.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l95 phases=1 bus1=95.2 bus2=96.2 length=200.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l10 phases=3 bus1=8.1.2.3 bus2=13.1.2.3 length=300.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l98 phases=3 bus1=99.1.2.3 bus2=100.1.2.3 length=300.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l97 phases=3 bus1=98.1.2.3 bus2=99.1.2.3 length=550.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l12 phases=1 bus1=13.3 bus2=34.3 length=150.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l11 phases=1 bus1=9r.1 bus2=14.1 length=425.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l99 phases=3 bus1=100.1.2.3 bus2=450.1.2.3 length=800.000 linecode=3 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l14 phases=1 bus1=14.1 bus2=11.1 length=250.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l13 phases=3 bus1=13.1.2.3 bus2=18.1.2.3 length=825.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l16 phases=1 bus1=15.3 bus2=16.3 length=375.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l15 phases=1 bus1=14.1 bus2=10.1 length=250.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l18 phases=1 bus1=18.1 bus2=19.1 length=250.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l17 phases=1 bus1=15.3 bus2=17.3 length=350.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l19 phases=3 bus1=18.1.2.3 bus2=21.1.2.3 length=300.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l21 phases=1 bus1=21.2 bus2=22.2 length=525.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l20 phases=1 bus1=19.1 bus2=20.1 length=325.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l23 phases=1 bus1=23.3 bus2=24.3 length=550.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l22 phases=3 bus1=21.1.2.3 bus2=23.1.2.3 length=250.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l25 phases=2 bus1=25r.1.3 bus2=26.1.3 length=350.000 linecode=7 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l24 phases=3 bus1=23.1.2.3 bus2=25.1.2.3 length=275.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l27 phases=2 bus1=26.1.3 bus2=27.1.3 length=275.000 linecode=7 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l26 phases=3 bus1=25.1.2.3 bus2=28.1.2.3 length=200.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l29 phases=1 bus1=27.1 bus2=33.1 length=500.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l28 phases=1 bus1=26.3 bus2=31.3 length=225.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l30 phases=3 bus1=28.1.2.3 bus2=29.1.2.3 length=300.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l32 phases=3 bus1=30.1.2.3 bus2=250.1.2.3 length=200.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l31 phases=3 bus1=29.1.2.3 bus2=30.1.2.3 length=350.000 linecode=2 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l34 phases=1 bus1=34.3 bus2=15.3 length=100.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l33 phases=1 bus1=31.3 bus2=32.3 length=300.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l36 phases=3 bus1=35.1.2.3 bus2=40.1.2.3 length=250.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l35 phases=2 bus1=35.1.2 bus2=36.1.2 length=650.000 linecode=8 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l38 phases=1 bus1=36.2 bus2=38.2 length=250.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l37 phases=1 bus1=36.1 bus2=37.1 length=300.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l39 phases=1 bus1=38.2 bus2=39.2 length=325.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l41 phases=3 bus1=40.1.2.3 bus2=42.1.2.3 length=250.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l40 phases=1 bus1=40.3 bus2=41.3 length=325.000 linecode=11 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l43 phases=3 bus1=42.1.2.3 bus2=44.1.2.3 length=200.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l42 phases=1 bus1=42.2 bus2=43.2 length=500.000 linecode=10 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l45 phases=3 bus1=44.1.2.3 bus2=47.1.2.3 length=250.000 linecode=1 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l44 phases=1 bus1=44.1 bus2=45.1 length=200.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l47 phases=3 bus1=47.1.2.3 bus2=48.1.2.3 length=150.000 linecode=4 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l46 phases=1 bus1=45.1 bus2=46.1 length=300.000 linecode=9 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l49 phases=3 bus1=49.1.2.3 bus2=50.1.2.3 length=250.000 linecode=4 units=ft
+~ normamps=400.00 emergamps=600.00
+new Line.l48 phases=3 bus1=47.1.2.3 bus2=49.1.2.3 length=250.000 linecode=4 units=ft
+~ normamps=400.00 emergamps=600.00

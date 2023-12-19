@@ -1,0 +1,360 @@
+new Transformer.xfs49a bank=xfs49a xfmrcode=ct50
+~ wdg=1 bus=49.1.0
+~ wdg=2 bus=s49a.1.0
+~ wdg=3 bus=s49a.0.2
+new Transformer.xfs69a bank=xfs69a xfmrcode=ct50
+~ wdg=1 bus=69.1.0
+~ wdg=2 bus=s69a.1.0
+~ wdg=3 bus=s69a.0.2
+new Transformer.xfs29a bank=xfs29a xfmrcode=ct50
+~ wdg=1 bus=29.1.0
+~ wdg=2 bus=s29a.1.0
+~ wdg=3 bus=s29a.0.2
+new Transformer.xfs77b bank=xfs77b xfmrcode=ct50
+~ wdg=1 bus=77.2.0
+~ wdg=2 bus=s77b.1.0
+~ wdg=3 bus=s77b.0.2
+new Transformer.xfs9a bank=xfs9a xfmrcode=ct50
+~ wdg=1 bus=9.1.0
+~ wdg=2 bus=s9a.1.0
+~ wdg=3 bus=s9a.0.2
+new Transformer.xfs109a bank=xfs109a xfmrcode=ct50
+~ wdg=1 bus=109.1.0
+~ wdg=2 bus=s109a.1.0
+~ wdg=3 bus=s109a.0.2
+new Transformer.xfs53a bank=xfs53a xfmrcode=ct50
+~ wdg=1 bus=53.1.0
+~ wdg=2 bus=s53a.1.0
+~ wdg=3 bus=s53a.0.2
+new Transformer.xfs33a bank=xfs33a xfmrcode=ct50
+~ wdg=1 bus=33.1.0
+~ wdg=2 bus=s33a.1.0
+~ wdg=3 bus=s33a.0.2
+new Transformer.xfs45a bank=xfs45a xfmrcode=ct25
+~ wdg=1 bus=45.1.0
+~ wdg=2 bus=s45a.1.0
+~ wdg=3 bus=s45a.0.2
+new Transformer.xfs49c bank=xfs49c xfmrcode=ct50
+~ wdg=1 bus=49.3.0
+~ wdg=2 bus=s49c.1.0
+~ wdg=3 bus=s49c.0.2
+new Transformer.xfs17c bank=xfs17c xfmrcode=ct25
+~ wdg=1 bus=17.3.0
+~ wdg=2 bus=s17c.1.0
+~ wdg=3 bus=s17c.0.2
+new Transformer.xfs37a bank=xfs37a xfmrcode=ct50
+~ wdg=1 bus=37.1.0
+~ wdg=2 bus=s37a.1.0
+~ wdg=3 bus=s37a.0.2
+new Transformer.xfs49b bank=xfs49b xfmrcode=ct100
+~ wdg=1 bus=49.2.0
+~ wdg=2 bus=s49b.1.0
+~ wdg=3 bus=s49b.0.2
+new Transformer.xfs60a bank=xfs60a xfmrcode=ct25
+~ wdg=1 bus=60.1.0
+~ wdg=2 bus=s60a.1.0
+~ wdg=3 bus=s60a.0.2
+new Transformer.xfs113a bank=xfs113a xfmrcode=ct50
+~ wdg=1 bus=113.1.0
+~ wdg=2 bus=s113a.1.0
+~ wdg=3 bus=s113a.0.2
+new Transformer.xfs5c bank=xfs5c xfmrcode=ct25
+~ wdg=1 bus=5.3.0
+~ wdg=2 bus=s5c.1.0
+~ wdg=3 bus=s5c.0.2
+new Transformer.xfs96b bank=xfs96b xfmrcode=ct25
+~ wdg=1 bus=96.2.0
+~ wdg=2 bus=s96b.1.0
+~ wdg=3 bus=s96b.0.2
+new Transformer.xfs84c bank=xfs84c xfmrcode=ct25
+~ wdg=1 bus=84.3.0
+~ wdg=2 bus=s84c.1.0
+~ wdg=3 bus=s84c.0.2
+new Transformer.xfs80b bank=xfs80b xfmrcode=ct50
+~ wdg=1 bus=80.2.0
+~ wdg=2 bus=s80b.1.0
+~ wdg=3 bus=s80b.0.2
+new Transformer.xfs92c bank=xfs92c xfmrcode=ct50
+~ wdg=1 bus=92.3.0
+~ wdg=2 bus=s92c.1.0
+~ wdg=3 bus=s92c.0.2
+new Transformer.xfs1a bank=xfs1a xfmrcode=ct50
+~ wdg=1 bus=1.1.0
+~ wdg=2 bus=s1a.1.0
+~ wdg=3 bus=s1a.0.2
+new Transformer.xfs98a bank=xfs98a xfmrcode=ct50
+~ wdg=1 bus=98.1.0
+~ wdg=2 bus=s98a.1.0
+~ wdg=3 bus=s98a.0.2
+new Transformer.xfs66c bank=xfs66c xfmrcode=ct100
+~ wdg=1 bus=66.3.0
+~ wdg=2 bus=s66c.1.0
+~ wdg=3 bus=s66c.0.2
+new Transformer.xfs86b bank=xfs86b xfmrcode=ct25
+~ wdg=1 bus=86.2.0
+~ wdg=2 bus=s86b.1.0
+~ wdg=3 bus=s86b.0.2
+new Transformer.xfs42a bank=xfs42a xfmrcode=ct25
+~ wdg=1 bus=42.1.0
+~ wdg=2 bus=s42a.1.0
+~ wdg=3 bus=s42a.0.2
+new Transformer.xfs10a bank=xfs10a xfmrcode=ct25
+~ wdg=1 bus=10.1.0
+~ wdg=2 bus=s10a.1.0
+~ wdg=3 bus=s10a.0.2
+new Transformer.xfs22b bank=xfs22b xfmrcode=ct50
+~ wdg=1 bus=22.2.0
+~ wdg=2 bus=s22b.1.0
+~ wdg=3 bus=s22b.0.2
+new Transformer.xfs34c bank=xfs34c xfmrcode=ct50
+~ wdg=1 bus=34.3.0
+~ wdg=2 bus=s34c.1.0
+~ wdg=3 bus=s34c.0.2
+new Transformer.xfs46a bank=xfs46a xfmrcode=ct25
+~ wdg=1 bus=46.1.0
+~ wdg=2 bus=s46a.1.0
+~ wdg=3 bus=s46a.0.2
+new Transformer.xfs58b bank=xfs58b xfmrcode=ct25
+~ wdg=1 bus=58.2.0
+~ wdg=2 bus=s58b.1.0
+~ wdg=3 bus=s58b.0.2
+new Transformer.xfs38b bank=xfs38b xfmrcode=ct25
+~ wdg=1 bus=38.2.0
+~ wdg=2 bus=s38b.1.0
+~ wdg=3 bus=s38b.0.2
+new Transformer.xfs112a bank=xfs112a xfmrcode=ct25
+~ wdg=1 bus=112.1.0
+~ wdg=2 bus=s112a.1.0
+~ wdg=3 bus=s112a.0.2
+new Transformer.xfs100c bank=xfs100c xfmrcode=ct50
+~ wdg=1 bus=100.3.0
+~ wdg=2 bus=s100c.1.0
+~ wdg=3 bus=s100c.0.2
+new Transformer.reg4a bank=reg4 xfmrcode=cimxfmrcode_reg4a
+~ wdg=1 bus=160.1.0
+~ wdg=2 bus=160r.1.0
+~ wdg=none
+new Transformer.reg4c bank=reg4 xfmrcode=cimxfmrcode_reg4c
+~ wdg=1 bus=160.3.0
+~ wdg=2 bus=160r.3.0
+~ wdg=none
+new Transformer.xfs104c bank=xfs104c xfmrcode=ct50
+~ wdg=1 bus=104.3.0
+~ wdg=2 bus=s104c.1.0
+~ wdg=3 bus=s104c.0.2
+new Transformer.xfs41c bank=xfs41c xfmrcode=ct25
+~ wdg=1 bus=41.3.0
+~ wdg=2 bus=s41c.1.0
+~ wdg=3 bus=s41c.0.2
+new Transformer.reg4b bank=reg4 xfmrcode=cimxfmrcode_reg4b
+~ wdg=1 bus=160.2.0
+~ wdg=2 bus=160r.2.0
+~ wdg=none
+new Transformer.xfs6c bank=xfs6c xfmrcode=ct50
+~ wdg=1 bus=6.3.0
+~ wdg=2 bus=s6c.1.0
+~ wdg=3 bus=s6c.0.2
+new Transformer.xfs85c bank=xfs85c xfmrcode=ct50
+~ wdg=1 bus=85.3.0
+~ wdg=2 bus=s85c.1.0
+~ wdg=3 bus=s85c.0.2
+new Transformer.xfs73c bank=xfs73c xfmrcode=ct50
+~ wdg=1 bus=73.3.0
+~ wdg=2 bus=s73c.1.0
+~ wdg=3 bus=s73c.0.2
+new Transformer.xfs2b bank=xfs2b xfmrcode=ct25
+~ wdg=1 bus=2.2.0
+~ wdg=2 bus=s2b.1.0
+~ wdg=3 bus=s2b.0.2
+new Transformer.xfs39b bank=xfs39b xfmrcode=ct25
+~ wdg=1 bus=39.2.0
+~ wdg=2 bus=s39b.1.0
+~ wdg=3 bus=s39b.0.2
+new Transformer.xfs79a bank=xfs79a xfmrcode=ct50
+~ wdg=1 bus=79.1.0
+~ wdg=2 bus=s79a.1.0
+~ wdg=3 bus=s79a.0.2
+new Transformer.xfs19a bank=xfs19a xfmrcode=ct50
+~ wdg=1 bus=19.1.0
+~ wdg=2 bus=s19a.1.0
+~ wdg=3 bus=s19a.0.2
+new Transformer.xfs7a bank=xfs7a xfmrcode=ct25
+~ wdg=1 bus=7.1.0
+~ wdg=2 bus=s7a.1.0
+~ wdg=3 bus=s7a.0.2
+new Transformer.xfs99b bank=xfs99b xfmrcode=ct50
+~ wdg=1 bus=99.2.0
+~ wdg=2 bus=s99b.1.0
+~ wdg=3 bus=s99b.0.2
+new Transformer.xfs87b bank=xfs87b xfmrcode=ct50
+~ wdg=1 bus=87.2.0
+~ wdg=2 bus=s87b.1.0
+~ wdg=3 bus=s87b.0.2
+new Transformer.xfs63a bank=xfs63a xfmrcode=ct50
+~ wdg=1 bus=63.1.0
+~ wdg=2 bus=s63a.1.0
+~ wdg=3 bus=s63a.0.2
+new Transformer.xfs43b bank=xfs43b xfmrcode=ct50
+~ wdg=1 bus=43.2.0
+~ wdg=2 bus=s43b.1.0
+~ wdg=3 bus=s43b.0.2
+new Transformer.xfs107b bank=xfs107b xfmrcode=ct50
+~ wdg=1 bus=107.2.0
+~ wdg=2 bus=s107b.1.0
+~ wdg=3 bus=s107b.0.2
+new Transformer.xfs11a bank=xfs11a xfmrcode=ct50
+~ wdg=1 bus=11.1.0
+~ wdg=2 bus=s11a.1.0
+~ wdg=3 bus=s11a.0.2
+new Transformer.xfs55a bank=xfs55a xfmrcode=ct25
+~ wdg=1 bus=55.1.0
+~ wdg=2 bus=s55a.1.0
+~ wdg=3 bus=s55a.0.2
+new Transformer.xfs59b bank=xfs59b xfmrcode=ct25
+~ wdg=1 bus=59.2.0
+~ wdg=2 bus=s59b.1.0
+~ wdg=3 bus=s59b.0.2
+new Transformer.xfs111a bank=xfs111a xfmrcode=ct25
+~ wdg=1 bus=111.1.0
+~ wdg=2 bus=s111a.1.0
+~ wdg=3 bus=s111a.0.2
+new Transformer.reg3c bank=reg3 xfmrcode=cimxfmrcode_reg3c
+~ wdg=1 bus=25.3.0
+~ wdg=2 bus=25r.3.0
+~ wdg=none
+new Transformer.xfs103c bank=xfs103c xfmrcode=ct50
+~ wdg=1 bus=103.3.0
+~ wdg=2 bus=s103c.1.0
+~ wdg=3 bus=s103c.0.2
+new Transformer.xfs50c bank=xfs50c xfmrcode=ct50
+~ wdg=1 bus=50.3.0
+~ wdg=2 bus=s50c.1.0
+~ wdg=3 bus=s50c.0.2
+new Transformer.xfs62c bank=xfs62c xfmrcode=ct50
+~ wdg=1 bus=62.3.0
+~ wdg=2 bus=s62c.1.0
+~ wdg=3 bus=s62c.0.2
+new Transformer.xfs30c bank=xfs30c xfmrcode=ct50
+~ wdg=1 bus=30.3.0
+~ wdg=2 bus=s30c.1.0
+~ wdg=3 bus=s30c.0.2
+new Transformer.reg3a bank=reg3 xfmrcode=cimxfmrcode_reg3a
+~ wdg=1 bus=25.1.0
+~ wdg=2 bus=25r.1.0
+~ wdg=none
+new Transformer.xfs74c bank=xfs74c xfmrcode=ct50
+~ wdg=1 bus=74.3.0
+~ wdg=2 bus=s74c.1.0
+~ wdg=3 bus=s74c.0.2
+new Transformer.xfs94a bank=xfs94a xfmrcode=ct50
+~ wdg=1 bus=94.1.0
+~ wdg=2 bus=s94a.1.0
+~ wdg=3 bus=s94a.0.2
+new Transformer.xfs82a bank=xfs82a xfmrcode=ct50
+~ wdg=1 bus=82.1.0
+~ wdg=2 bus=s82a.1.0
+~ wdg=3 bus=s82a.0.2
+new Transformer.xfs70a bank=xfs70a xfmrcode=ct25
+~ wdg=1 bus=70.1.0
+~ wdg=2 bus=s70a.1.0
+~ wdg=3 bus=s70a.0.2
+new Transformer.xfs90b bank=xfs90b xfmrcode=ct50
+~ wdg=1 bus=90.2.0
+~ wdg=2 bus=s90b.1.0
+~ wdg=3 bus=s90b.0.2
+new Transformer.xfs28a bank=xfs28a xfmrcode=ct50
+~ wdg=1 bus=28.1.0
+~ wdg=2 bus=s28a.1.0
+~ wdg=3 bus=s28a.0.2
+new Transformer.xfs68a bank=xfs68a xfmrcode=ct25
+~ wdg=1 bus=68.1.0
+~ wdg=2 bus=s68a.1.0
+~ wdg=3 bus=s68a.0.2
+new Transformer.xfs88a bank=xfs88a xfmrcode=ct50
+~ wdg=1 bus=88.1.0
+~ wdg=2 bus=s88a.1.0
+~ wdg=3 bus=s88a.0.2
+new Transformer.xfs32c bank=xfs32c xfmrcode=ct25
+~ wdg=1 bus=32.3.0
+~ wdg=2 bus=s32c.1.0
+~ wdg=3 bus=s32c.0.2
+new Transformer.xfs52a bank=xfs52a xfmrcode=ct50
+~ wdg=1 bus=52.1.0
+~ wdg=2 bus=s52a.1.0
+~ wdg=3 bus=s52a.0.2
+new Transformer.xfs64b bank=xfs64b xfmrcode=ct100
+~ wdg=1 bus=64.2.0
+~ wdg=2 bus=s64b.1.0
+~ wdg=3 bus=s64b.0.2
+new Transformer.xfs20a bank=xfs20a xfmrcode=ct50
+~ wdg=1 bus=20.1.0
+~ wdg=2 bus=s20a.1.0
+~ wdg=3 bus=s20a.0.2
+new Transformer.xfs12b bank=xfs12b xfmrcode=ct25
+~ wdg=1 bus=12.2.0
+~ wdg=2 bus=s12b.1.0
+~ wdg=3 bus=s12b.0.2
+new Transformer.xfs24c bank=xfs24c xfmrcode=ct50
+~ wdg=1 bus=24.3.0
+~ wdg=2 bus=s24c.1.0
+~ wdg=3 bus=s24c.0.2
+new Transformer.xfs56b bank=xfs56b xfmrcode=ct25
+~ wdg=1 bus=56.2.0
+~ wdg=2 bus=s56b.1.0
+~ wdg=3 bus=s56b.0.2
+new Transformer.xfs16c bank=xfs16c xfmrcode=ct50
+~ wdg=1 bus=16.3.0
+~ wdg=2 bus=s16c.1.0
+~ wdg=3 bus=s16c.0.2
+new Transformer.xfs102c bank=xfs102c xfmrcode=ct25
+~ wdg=1 bus=102.3.0
+~ wdg=2 bus=s102c.1.0
+~ wdg=3 bus=s102c.0.2
+new Transformer.xfs106b bank=xfs106b xfmrcode=ct50
+~ wdg=1 bus=106.2.0
+~ wdg=2 bus=s106b.1.0
+~ wdg=3 bus=s106b.0.2
+new Transformer.reg2a bank=reg2 xfmrcode=cimxfmrcode_reg2a
+~ wdg=1 bus=9.1.0
+~ wdg=2 bus=9r.1.0
+~ wdg=none
+new Transformer.xfs114a bank=xfs114a xfmrcode=ct25
+~ wdg=1 bus=114.1.0
+~ wdg=2 bus=s114a.1.0
+~ wdg=3 bus=s114a.0.2
+new Transformer.xfs31c bank=xfs31c xfmrcode=ct25
+~ wdg=1 bus=31.3.0
+~ wdg=2 bus=s31c.1.0
+~ wdg=3 bus=s31c.0.2
+new Transformer.xfs51a bank=xfs51a xfmrcode=ct25
+~ wdg=1 bus=51.1.0
+~ wdg=2 bus=s51a.1.0
+~ wdg=3 bus=s51a.0.2
+new Transformer.xfs75c bank=xfs75c xfmrcode=ct50
+~ wdg=1 bus=75.3.0
+~ wdg=2 bus=s75c.1.0
+~ wdg=3 bus=s75c.0.2
+new Transformer.xfs95b bank=xfs95b xfmrcode=ct25
+~ wdg=1 bus=95.2.0
+~ wdg=2 bus=s95b.1.0
+~ wdg=3 bus=s95b.0.2
+new Transformer.xfs71a bank=xfs71a xfmrcode=ct50
+~ wdg=1 bus=71.1.0
+~ wdg=2 bus=s71a.1.0
+~ wdg=3 bus=s71a.0.2
+new Transformer.xfs83c bank=xfs83c xfmrcode=ct25
+~ wdg=1 bus=83.3.0
+~ wdg=2 bus=s83c.1.0
+~ wdg=3 bus=s83c.0.2
+new Transformer.xfs4c bank=xfs4c xfmrcode=ct50
+~ wdg=1 bus=4.3.0
+~ wdg=2 bus=s4c.1.0
+~ wdg=3 bus=s4c.0.2
+new Transformer.reg1a phases=3 windings=2 xhl=0.001000 %imag=0.000 %noloadloss=0.000 ~ normamps=763.32 emergamps=1040.90
+~ wdg=1 bus=150 conn=w kv=4.160 kva=5000.0 %r=0.000005
+~ wdg=2 bus=150r conn=w kv=4.160 kva=5000.0 %r=0.000005
+~ wdg = none
+new Transformer.xfm1 phases=3 windings=2 xhl=2.720000 %imag=0.000 %noloadloss=0.000 ~ normamps=22.90 emergamps=31.23
+~ wdg=1 bus=61s conn=d kv=4.160 kva=150.0 %r=0.635000
+~ wdg=2 bus=610 conn=d kv=0.480 kva=150.0 %r=0.635000
+~ wdg = none

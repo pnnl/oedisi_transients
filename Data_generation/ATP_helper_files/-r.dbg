@@ -1,0 +1,18 @@
+  GUTATP  connects diagnostic file.  IPRSUP = -1  in  STARTUP  suppresses such output (see Apr, 96, newsletter).
+  Begin LFLUSH by setting L6HAND = -99.
+ Top of OVER1.  KILL, KPARAM, NCHAIN, IPRSNO =  1111    -9     1     1
+ OVER1 initialize.  NUMDCD, KASEND, KCARD2 = -8765     5     0
+                    NUMRUN, L6DISK =     0 -2244
+ OVER1 has LINUSE = -1   Define SLASH =\
+ OVER1 tests KPARAM, NUMRUN = -9 0
+       CIM132(1:30) =s                             
+       Length LENCIM = 1
+  LUNDAT is not yet connected to input data.
+   Connect it now (next),  as read-only.  LENSPY = 22
+  Back in UNIXIN.  Connection of input data was
+  successful (no  ERR=1761  service).
+  over1 sets nchain = 29.  kill = 301
+  Top of main20 services normal KILL-code error stop.
+  GNU ENTRY STOPTP has KPARAM = -9
+  Halt in STOPTP because KPARAM = -9
+ DFLUSH  considers existing name.  LENLU6 =   6   LU6NAM(1:LENLU6) =-r.lis

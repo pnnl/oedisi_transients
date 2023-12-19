@@ -1,0 +1,33 @@
+   ---   1   cards of disk file read into card cache cells  1   onward.
+
+------------------------------------------------------------------------------------------------------------------------------------
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+------------------------------------------------------------------------------------------------------------------------------------
+You lose, fella.   The EMTP logic has detected an error condition, and is now going to terminate program execution.  The following
+message summarizes the circumstances.  No input data card has yet been read (it is too early),  so no "last card" can be shown.
+              KILL code number                Overlay number               Nearby statement number
+                        301                          1                               4923
+KILL = 301.   ATP believes that input data is a Unix disk file.  However, for ATP to accept it,  UNIXON  must be given a positive
+value in  STARTUP.
+------------------------------------------------------------------------------------------------------------------------------------
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+------------------------------------------------------------------------------------------------------------------------------------
+
+ Temporary error stop in  ENTRY STOPTP of "WINDOW".     NCHAIN, LASTOV =     29     1
+               12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ ABUFF(1:80) = $EOF    { Software end-of-file terminates last of 20 or fewer VMS-like symbols
+
+------------------------------------------------------------------------------------------------------------------------------------
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+------------------------------------------------------------------------------------------------------------------------------------
+
+This is not actually a  KILL  error termination.  But ATP now will try to continue as if it were.  A recursive  CALL  is involved.
+
+------------------------------------------------------------------------------------------------------------------------------------
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/ERROR/
+------------------------------------------------------------------------------------------------------------------------------------
+
