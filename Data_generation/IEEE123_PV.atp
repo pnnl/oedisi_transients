@@ -1,0 +1,83 @@
+BEGIN NEW DATA CASE
+$INCLUDE, IEEE123_PV.prm
+C  dT  >< Tmax >< Xopt >< Copt ><Epsiln>
+__DELTAT____TMAX    60.0
+   65535       1       1       1       1       0       0       1
+C        1         2         3         4         5         6         7         8
+C 345678901234567890123456789012345678901234567890123456789012345678901234567890
+/TACS
+TACS HYBRID
+/BRANCH
+C < n1 >< n2 ><ref1><ref2>< R  >< A  >< B  ><Leng><><>0
+C < n1 >< n2 ><ref1><ref2>< R  >< L  >< C  >
+$INCLUDE, IEEE123_PV_net.atp
+$INCLUDE, Support\AdjacentFeeder.atp
+  FAULTA                   0.001                                               1
+  FAULTB                   0.001                                               1
+  FAULTC                   0.001                                               1
+  FALTBC_FLT_C             0.001                                               1
+/SWITCH
+C < n 1>< n 2>< Tclose ><Top/Tde ><   Ie   ><Vf/CLOP ><  type  >
+  _FLT_AFAULTA_TFAULTA__    9999.0
+  _FLT_BFAULTB_TFAULTB__    9999.0
+  _FLT_CFAULTC_TFAULTC__    9999.0
+  _FLT_BFALTBC_TFAULTBC_    9999.0
+/TACS
+33PV001A
+33PV001X
+33PV001I
+33PV002A
+33PV002X
+33PV002I
+33PV003A
+33PV003X
+33PV003I
+33PV004A
+33PV004X
+33PV004I
+33PV005A
+33PV005X
+33PV005I
+33PV006A
+33PV006X
+33PV006I
+33PV007A
+33PV007X
+33PV007I
+33PV008A
+33PV008X
+33PV008I
+33PV009A
+33PV009X
+33PV009I
+33PV010A
+33PV010X
+33PV010I
+33PV011A
+33PV011X
+33PV011I
+33PV012A
+33PV012X
+33PV012I
+33PV013A
+33PV013X
+33PV013I
+33PV014A
+33PV014X
+33PV014I
+33PV001V
+33PV001W
+33PV009V
+33PV009W
+33PV013V
+33PV013W
+/OUTPUT
+  SBUS ASBUS BSBUS C
+BLANK TACS
+BLANK BRANCH
+BLANK SWITCH
+BLANK SOURCE
+BLANK OUTPUT
+BLANK PLOT
+BEGIN NEW DATA CASE
+BLANK
