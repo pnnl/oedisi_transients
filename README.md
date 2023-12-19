@@ -1,6 +1,7 @@
 # OEDISI Transients Algorithm
 
 ## Use-Case Development
-### The transient use case is split into two steps: 
-3.a. Dataset generation 
-3.b. Event detection and identification algorithms.
+
+The transient use case is split into two steps: 
+a. Dataset generation 
+b. Event detection and identification algorithms.
