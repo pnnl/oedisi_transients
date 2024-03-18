@@ -2,9 +2,10 @@
 
 Sample data generated on IEEE123 in several formats:
 
-- csv
-- Comtrade (.dat)
+- ATP generated files (.pl4)
+- COMTRADE (.dat)
 - Matlab (.mat)
+- csv
 - hdf5
 
 Examples include faults on a single phase, two phases, and three phases. Files include waveforms at various locations:
