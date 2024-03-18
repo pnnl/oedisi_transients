@@ -3,7 +3,7 @@
 Sample data generated on IEEE123 in several formats:
 
 - ATP generated files (.pl4)
-- COMTRADE (.dat)
+- COMTRADE (.dat and .cfg)
 - Matlab (.mat)
 - csv
 - hdf5
