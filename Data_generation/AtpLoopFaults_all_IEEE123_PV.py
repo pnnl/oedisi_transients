@@ -2,25 +2,32 @@
 """
 Created on Fri Feb 10 17:53:28 2023
 
-@author: chat694 Kaustav Chatterjee PNNL
+@author: Meghana Ramesh PNNL
 """
 
-import math
-import sys
-import operator
 import subprocess
-import os
 import shutil
 import random
-import msvcrt
-from pynput.keyboard import Key, Controller
 import pandas as pd
-import csv
 
 
-no_sims = 1  # 1000
+
+no_sims = 1  # Number of nodes to simulate the faults can be changed here
+
+atp_base = 'IEEE123_PV' #Feeder model can be changed here
+atp_path = "C:/Meghana/OEDI/demo/codes/"
+atp_file = atp_base + '.atp'
+atp_list = atp_path + atp_base + '.lis'
+atp_parm = atp_path + atp_base + '.prm'
+atp_pl4 = atp_path + atp_base + '.pl4'
+pl4path = "C:/Meghana/OEDI/demo/output"
+source_vbase = float(10181.71)
+atp_vpu = float(1.035)
+atp_dt = float(1e-5) # Sampling rate can be changed here
+
 
 def run_atp_fault_case(bus, phs, slgf, fname):
+    #transient setting for fault angle
   tfault = random.uniform(0.15, 0.15 + 1/60)
   vsrc = '{:.2f}'.format (atp_vpu * source_vbase)
   fp = open (atp_parm, mode='w')
@@ -79,31 +86,21 @@ def run_atp_fault_case(bus, phs, slgf, fname):
     print ('_TFAULTBC_ =9.15', file=fp)
   print ('BLANK END PARAMETER', file=fp)
   fp.close()
+  
+  #runtp_path = os.path.join("C:","ATP","atpgnu", "runTP")
+  runtp_path = r"C:\ATP\atpgnu\runTP"
 
-  cmdline = "runtp " + atp_file + " >nul"
+  cmdline = runtp_path + ' ' + atp_file + " >nul"
   
   p1 = subprocess.Popen(cmdline, cwd=atp_path, shell=True)
   p1.wait()
   
   # move the pl4 file
-  print ('moving {:s} to {:s}'.format (atp_pl4, fname))
+  #print ('moving {:s} to {:s}'.format (atp_pl4, fname))
   shutil.move(atp_pl4, fname)
 
-
-
-atp_base = 'IEEE123_PV'
-atp_path = "C:/ATP/OEDI_ATP_Models/"
-atp_file = atp_base + '.atp'
-atp_list = atp_path + atp_base + '.lis'
-atp_parm = atp_path + atp_base + '.prm'
-atp_pl4 = atp_path + atp_base + '.pl4'
-pl4path = "C:/ATP/OEDI_ATP_Models/"
-source_vbase = float(10181.71)
-atp_vpu = float(1.035)
-atp_dt = float(1e-5)
-
-zones = pd.read_csv('zone_info_IEEE123_PV_v2.csv')  # read csv from zone classification file
-zone = zones.zone_35  # zones.zone_35
+zones = pd.read_csv('nodes_IEEE123_PV.csv')  # read csv from zone classification file
+zone = zones.zone_1  # zones.zone_1
 zone = zone.dropna()
 for times in range(no_sims):
     ln=random.choice(zone)
