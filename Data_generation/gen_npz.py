@@ -21,17 +21,23 @@ def id_mat_files(address):
             pass
     return matlab_files
 
-def convert_to_array(mat_file):
+def convert_to_array(mat_file, time_limit=0.4):
+    ''' Time limit: max number of seconds to save
+       '''
     mf_dict = sc.io.loadmat(mat_file)
     # Pre-determine array size for PV###A,B,C,X,Y,Z
     use_keys = [k for k in mf_dict.keys() if 'PV' in k.upper() and \
                 k[-1] in ['A', 'B', 'C', 'X', 'Y', 'Z']]
-    len_arr = len(mf_dict[use_keys[0]])
+    time_arr = mf_dict['t']
+    dt = time_arr[1]-time_arr[0] # Assume uniform time sampling
+    len_max = int(time_limit/dt + 1)
+    len_arr = min(len(mf_dict[use_keys[0]]), len_max)
     # Loop through keys and fill in data array
     pv_data = np.zeros((len_arr, len(use_keys)))
     for i, key in enumerate(use_keys):
         array = mf_dict[key]
-        pv_data[:,i] = array.reshape((len(array),))
+        # Note, we may cut off the initial part of the array to avoid transients and introduce a phase shift
+        pv_data[:,i] = array.reshape((len(array),))[-len_arr:]
     return pv_data
 
 def progress_message(pre_message, cnt, cmax):
@@ -96,17 +102,18 @@ for i, mf in enumerate(mat_files):
         phs, bus = get_phase_bus(os.path.split(mf)[-1])
         phases.append(phs)
         atp_bus.append(bus)
-print('') # Extra line after progress method        
-# Add on extra no fault cases so we have equal numbers of faults/no faults
-# This is hardcoded for 500 of each, with the one no fault case copied
-if nf_idx is None:
-    raise IndexError(f"Failed to find a no-fault case in the directory {feeder_path}")
-pv_nofault = convert_to_array(mat_files[nf_idx])
-for j in range(extr_nofault):
-    all_data[j+len(mat_files),:,:] = pv_nofault
-    all_labels.append('no_fault')
-    phases.append('nan')
-    atp_bus.append('nan')
+print('') # Extra line after progress method  
+
+if extr_nofault > 0:
+    # Add on extra no fault cases so we have equal numbers of faults/no faults
+    if nf_idx is None:
+        raise IndexError(f"Failed to find a no-fault case in the directory {feeder_path}")
+    pv_nofault = convert_to_array(mat_files[nf_idx])
+    for j in range(extr_nofault):
+        all_data[j+len(mat_files),:,:] = pv_nofault
+        all_labels.append('no_fault')
+        phases.append('nan')
+        atp_bus.append('nan')
     
 all_labels = np.array(all_labels, dtype=np.string_)
 phases = np.array(phases, dtype=np.string_)

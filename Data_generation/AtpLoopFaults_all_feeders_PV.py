@@ -24,34 +24,40 @@ no_sims = 1000
 
 def run_atp_fault_case(bus, phs, slgf, fname):
     tfault = random.uniform(0.15, 0.15 + 1/60)
+    extra_period = np.ceil(1/60./atp_dt) # extra time intervals in one period, rounded up
+    extra_time = extra_period*atp_dt*(1+np.random.rand()) # one - two extra periods
     vsrc = '{:.2f}'.format (atp_vpu * source_vbase)
     fp = open (atp_parm, mode='w')
     print ('$PARAMETER', file=fp)
     print ('_FLT_=\'' + bus.ljust(5) + '\'', file=fp)
     print ('__DELTAT   ={:.10f}'.format (atp_dt), file=fp)
-    tmax = 0.4 # 1.0-atp_dt
+    tmax = 0.4 + extra_time # Add time to 1) avoid startup transients 2) vary starting phase angle
     print (f'____TMAX   ={tmax}', file=fp)
     print ('_VSOURCE__ =' + vsrc, file=fp)
-    # Vary the starting phase
-    freq_base = np.random.rand()*360
-    freqa = f'{freq_base:0.3f}'#.rjust(10)
-    freqb = f'{freq_base-120:0.3f}'#.rjust(10)
-    freqc = f'{freq_base-240:0.3f}'#.rjust(10)
-    print(f'__FREQ_A__ ={freqa}', file=fp)
-    print(f'__FREQ_B__ ={freqb}', file=fp)
-    print(f'__FREQ_C__ ={freqc}', file=fp)
+    # Vary the starting phase (This doesn't work because ATP always starts at the same phase)
+    vary_phase = False
+    if vary_phase:
+        freq_base = 60 #np.random.rand()*360
+        freqa = f'{freq_base:0.3f}'#.rjust(10)
+        freqb = f'{freq_base-120:0.3f}'#.rjust(10)
+        freqc = f'{freq_base-240:0.3f}'#.rjust(10)
+        print(f'__FREQ_A__ ={freqa}', file=fp)
+        print(f'__FREQ_B__ ={freqb}', file=fp)
+        print(f'__FREQ_C__ ={freqc}', file=fp)
     # Update the _PV.atp file with a random network configuration
-    load_num = np.random.randint(3)+1
-    pv_num = np.random.randint(2)+1
-    network_file = f'IEEE13_PV_L{load_num}C{pv_num}_net.atp'
-    with open(os.path.join(atp_path,f'{feeder}_PV.atp'), 'r') as f:
-        atp_lines = f.readlines()
-    for i, line in enumerate(atp_lines):
-        if '_net.atp' in line:
-            newline = f'$INCLUDE, {network_file}\n'
-            atp_lines[i] = newline
-    with open(os.path.join(atp_path,f'{feeder}_PV.atp'), 'w') as f:
-        f.writelines(atp_lines)
+    update_network = True
+    if update_network:
+        load_num = np.random.randint(3)+1
+        pv_num = np.random.randint(2)+1
+        network_file = f'IEEE13_PV_L{load_num}C{pv_num}_net.atp'
+        with open(os.path.join(atp_path,f'{feeder}_PV.atp'), 'r') as f:
+            atp_lines = f.readlines()
+        for i, line in enumerate(atp_lines):
+            if '_net.atp' in line:
+                newline = f'$INCLUDE, {network_file}\n'
+                atp_lines[i] = newline
+        with open(os.path.join(atp_path,f'{feeder}_PV.atp'), 'w') as f:
+            f.writelines(atp_lines)
     if slgf == True:  # line-to-gnd fault
         if phs == 'A':
             print ('_TFAULTA__ ={:.5f}'.format (tfault), file=fp)
@@ -220,21 +226,23 @@ for feeder in feeder_names:
 # Once done we can run all of the other file generation scripts
 # For now just importing them and they will run, but we should
 # make this into a proper workflow at some point
-convert_comtrade=True
-convert_mat=True
-convert_csv=True
-compress=True
-if convert_comtrade:
-    print("\nStarting pl4 to Comtrade conversion\n")
-    import pl4_to_comtrade
-if convert_csv:
-    print("\nStarting Comtrade to csv conversion\n")
-    cmdline = f'python comtrade_to_csv -d "{pl4path}"'
-    p1 = subprocess.Popen(cmdline, cwd=os.getcwd(), shell=True)
-    p1.wait()
-if convert_mat:
-    print("\nStarting pl4 to mat conversion\n")
-    import gen_con_matfiles
-if compress:
-    print("\nStarting npz and hdf5 compression\n")
-    import gen_npz
+convert = True
+if convert:
+    convert_comtrade=True
+    convert_mat=True
+    convert_csv=True
+    compress=True
+    if convert_comtrade:
+        print("\nStarting pl4 to Comtrade conversion\n")
+        import pl4_to_comtrade
+    if convert_csv:
+        print("\nStarting Comtrade to csv conversion\n")
+        cmdline = f'python comtrade_to_csv -d "{pl4path}"'
+        p1 = subprocess.Popen(cmdline, cwd=os.getcwd(), shell=True)
+        p1.wait()
+    if convert_mat:
+        print("\nStarting pl4 to mat conversion\n")
+        import gen_con_matfiles
+    if compress:
+        print("\nStarting npz and hdf5 compression\n")
+        import gen_npz
