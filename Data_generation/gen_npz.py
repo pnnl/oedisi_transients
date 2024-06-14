@@ -258,7 +258,11 @@ def atpdraw_gen_npz(tstart=1.0, twindow=0.4, dt=1e-4, vnominal=None, pnominal=No
             fault_data = np.load(os.path.join(feeder_path,f'{feeder}_data.npz'))
             # Include new data
             for key in save_data.keys():
-                save_data.update({key:fault_data[key]})
+                if key == 'data':
+                    new_array = np.vstack((fault_data[key],save_data[key]))
+                else:
+                    new_array = np.hstack((fault_data[key],save_data[key]))
+                save_data[key] = new_array
         np.savez_compressed(os.path.join(feeder_path,f'{feeder}_data_sag'), **save_data)
     save_hdf5 = True
     if save_hdf5:
