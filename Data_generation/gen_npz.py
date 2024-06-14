@@ -68,6 +68,10 @@ def convert_to_array(mat_file, time_limit=0.4, tstart=0, vnominal=None, pnominal
     len_arr = min(len(mf_dict[use_keys[0]]), len_max)
     # Loop through keys and fill in data array
     pv_data = np.zeros((len_arr, len(use_keys)))
+    if tstart != 0:
+        textra = np.random.rand()*(1/60.)
+        tstart += textra
+        sidx = int(tstart/dt)
     for i, key in enumerate(use_keys):
         array = mf_dict[key]
         # Note, we may cut off the initial part of the array to avoid transients and introduce a phase shift
@@ -75,8 +79,6 @@ def convert_to_array(mat_file, time_limit=0.4, tstart=0, vnominal=None, pnominal
             pv_data[:,i] = array.reshape((len(array),))[-len_arr:]
         else:
             # Add random cycle shift to start time
-            tstart += np.random.rand()*(1/60.)
-            sidx = int(tstart/dt)
             pv_data[:,i] = array.reshape((len(array),))[sidx:sidx+len_max]
     # Now normalize all onto a per-unit scale.
     # If nominal values are not specified, we determine them empirically
